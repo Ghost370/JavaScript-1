@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>JS Уровень 1 | Урок 1</title>
+</head>
+<body>
+
+	<p>1) Температура 100<sup>o</sup>C по Фаренгейту: <b id="tFar"></b></p>
+	<script>
+		/*  1) ТЕМПЕРАТУРА ПО ФАРЕНГЕЙТУ */
+		var Tc = 100;
+		var Tf;
+
+		Tf = (9 / 5) * Tc + 32;
+		document.querySelector('#tFar').innerHTML = Tf + '<sup>o</sup>F';
+	</script>
+
+
+	<p>3) name = Василий. admin = <b id="vaso"></b></p>
+	<script>
+		/* 3) ADMIN , NAME == Василий */
+		var name = 'Василий';
+		var admin = name;
+		document.querySelector('#vaso').innerHTML = admin;
+	</script>
+
+
+	<p>4) Выражение 1000 + "108" = <b>1000108</b></p>
+	
+</body>
+</html>
+
