@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>JS Уровень 1 | Урок 2</title>
+</head>
+<body>
+
+	<script>
+		var operZnak = prompt('arg1 = 2; arg2 = 1; Знак операции: (+ - * /)');
+		var argument1 = 2;
+		var argument2 = 1;
+
+		function mathOperation(arg1, arg2, operation) {
+			switch (operation) {
+				case '+':
+				return arg1 + arg2;
+				break;
+
+				case '-':
+				return arg1 - arg2;
+				break;
+
+				case '*':
+				return arg1 * arg2;
+				break;
+
+				case '/':
+				return arg1 / arg2;
+				break;
+
+				case '':
+				return 'Укажите знак операции (+ - * /)'
+				break;
+			}
+		}
+		alert(mathOperation(argument1, argument2, operZnak));
+		document.location.reload();
+	</script>
+	
+</body>
+</html>
+
