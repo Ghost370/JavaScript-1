@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>JS Уровень 1 | Урок 2</title>
+</head>
+<body>
+
+	<script>
+		var value  = + prompt('Число: ');
+		var stepen = + prompt(value + ' в степени: ');
+
+		function power(val, pow) {
+			if ( pow >= 1 ) {
+				let result = val * power(val, pow - 1);
+				return result;
+			} else if ( pow === 0) {
+				return 1;
+			}
+		}
+
+		alert('Равняется: ' + power(value, stepen));
+		
+	</script>
+	
+</body>
+</html>
+
