@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>JS Уровень 1 | Урок 2</title>
+</head>
+<body>
+
+	<div id="result"></div>
+	
+	<script>
+		var a = + prompt('a = ');
+		var b = + prompt('b = ');
+
+		function sum(a_, b_){
+			return a + b;
+		}
+		function raznica(a_, b_){
+			return a - b;
+		}
+		function umnojenie(a_, b_){
+			return a * b;
+		}
+		function delenie(a_, b_){
+			return a / b;
+		}
+
+		var result = document.querySelector('#result');
+		result.innerHTML =  'a = ' + a + ', ' +
+							'b = ' + b + '<br /><br />' +
+							'Сумма: ' + sum(a, b) + '<br />' + 
+							'Разница: ' + raznica(a, b) + '<br />' + 
+							'Произведение: ' + umnojenie(a, b) + '<br />' + 
+							'Деление: ' + delenie(a, b);
+	</script>
+	
+</body>
+</html>
+
