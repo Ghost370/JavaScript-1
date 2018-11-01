@@ -147,8 +147,4 @@ updateTotal();
 
 /* УДАЛИТЬ ТОВАР ИЗ КОРЗИНЫ */
 
-document.onclick = function(event) {
-	if (event.target.classList.contains('cart_product_remove') == true) {
-		alert('Упс... Не осилил всё за один раз :)');
-	}
-}
+// Не осилил всё за один раз :)
