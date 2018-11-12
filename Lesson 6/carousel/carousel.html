@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>JavaScript - Level 1 | Слайдер изображений</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="frontend: Artem Lyapunov" />
+
+	<link rel="stylesheet" href="css/normalize.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="slider_box">
+	<div class="toolbar">
+		<input id="slideshow" type="checkbox" class="checkbox" data-seconds="4" checked />
+		<label for="slideshow">Слайдшоу</label>
+
+		<input id="thumbnails" type="checkbox" class="checkbox" />
+		<label for="thumbnails">Миниатюры</label>
+	</div>
+	<div class="slider_main_box">
+		<a href="#" class="slide_nav arrow_previous"><span>&nbsp;</span><div id="slide_prev" style="background-image: url(img/1.jpg);"></div></a>
+		<a href="#" class="slide_nav arrow_next"><span>&nbsp;</span><div id="slide_next" style="background-image: url(img/1.jpg);"></div></a>
+		<div class="slider_main_image animate" id="big_image" style="background-image: url(img/1.jpg);"></div>
+	</div>
+	<div class="slider_thumbs_box">
+		<ul class="slider_thumbs"></ul>
+	</div>
+</div>
+
+<script defer src="js/main.js"></script>
+
+</body>
+</html>
